@@ -20,9 +20,9 @@
 
     <div class="inputs">
         <input class="taskinput" type="text" placeholder="Enter Task">
-        <div class="date-input">
+        <div class="date-input-container">
             Deadline:
-            <input style="margin-left: 10px; border-radius: 11px; border:none; padding-left: 2px; outline: none;
+            <input class="date-input" style="margin-left: 10px; border-radius: 11px; border:none; padding-left: 2px; outline: none;
             " type="date">
         </div>
         <div style="margin-right: 5px; font-weight: bold;">Select Priority:</div>
@@ -31,25 +31,36 @@
             <div class="high">
             
                 High 
-                <input style="margin-left:5px" type="radio" name="priority">
+                <input class="high-box" style="margin-left:5px" type="radio" name="priority">
             </div>
             <div class="medium">
                 Medium 
-                <input style="margin-left:5px" type="radio" name="priority">
+                <input class="medium-box" style="margin-left:5px" type="radio" name="priority">
             </div>
             <div  class="low">
                 Low 
-                <input style="margin-left:5px" type="radio" name="priority">
+                <input class="low-box" style="margin-left:5px" type="radio" name="priority">
             </div>  
         </div>
 
     </div>
 
     <div class="add" >
-        <button class="add-btn">
+        <button onclick="add();" class="add-btn">
             ADD
         </button>
     </div>
+
+    <div class="task-columns">
+        <span class="tn">TASK</span>
+        <span class="dl">DEADLINE</span>
+        <span class="p">PRIORITY</span>
+        <span class="s">STATUS</span>
+    </div>
+    <div class="task-list">
+       
+    </div>
+    
 
     <script src="script.js"></script>
 

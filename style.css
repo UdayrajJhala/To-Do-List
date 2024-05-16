@@ -10,7 +10,7 @@ body {
 }
 
 .title {
-    margin-top: 100px;
+    margin-top: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -43,7 +43,7 @@ body {
     border: none;
 }
 
-.date-input {
+.date-input-container {
     display: flex;
     flex: 1.5;
     margin-left: 10px;
@@ -89,3 +89,47 @@ body {
     color:white;
     border: none;
 }
+
+.task, .task-columns {
+    height: 15px;
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 350px;
+    justify-content: space-between;
+    margin-right: 350px;
+    margin-bottom: 10px;
+}
+
+.task-columns {
+    font-weight: bold;
+}
+
+.taskname, .tn {
+    display: flex;
+    justify-content: center;
+    flex:3
+}
+
+.deadline, .dl {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+.priority, .p {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+.status, .s {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+.check:hover {
+    cursor: pointer;
+}
+
