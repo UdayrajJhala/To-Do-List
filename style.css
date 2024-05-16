@@ -75,15 +75,16 @@ body {
     margin-top: 40px;
 }
 
-.add-btn {
+.add-btn, .delete {
     width: 60px;
     height: 30px;
     font-weight: bold;
     border: none;
     transition: background-color 0.3s, color 0.4s;
+    border-radius: 15px;
 }
 
-.add-btn:hover {
+.add-btn:hover, .delete:hover {
     cursor:pointer;
     background-color: black;
     color:white;
@@ -99,6 +100,10 @@ body {
     justify-content: space-between;
     margin-right: 350px;
     margin-bottom: 10px;
+}
+
+.delete {
+    width: 75px;
 }
 
 .task-columns {
@@ -128,6 +133,14 @@ body {
     justify-content: center;
     flex: 1;
 }
+
+.delete-container, .d {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    
+}
+
 
 .check:hover {
     cursor: pointer;
